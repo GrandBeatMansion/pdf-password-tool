@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="1200" height="360">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0b1220"/>
+      <stop offset="55%" stop-color="#111c30"/>
+      <stop offset="100%" stop-color="#1c2b45"/>
+    </linearGradient>
+    <linearGradient id="doc" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f4f7fb"/>
+      <stop offset="100%" stop-color="#d7e1ee"/>
+    </linearGradient>
+    <linearGradient id="lockBody" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#38f0c8"/>
+      <stop offset="100%" stop-color="#0fb88a"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#38f0c8" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#38f0c8" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="stripe" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ff5f6d"/>
+      <stop offset="100%" stop-color="#c02b3c"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="0" y="0" width="1200" height="360" fill="url(#bg)"/>
+
+  <!-- faint tech grid -->
+  <g stroke="#3b4a63" stroke-width="1" opacity="0.25">
+    <line x1="0" y1="60" x2="1200" y2="60"/>
+    <line x1="0" y1="120" x2="1200" y2="120"/>
+    <line x1="0" y1="240" x2="1200" y2="240"/>
+    <line x1="0" y1="300" x2="1200" y2="300"/>
+    <line x1="750" y1="0" x2="750" y2="360"/>
+    <line x1="950" y1="0" x2="950" y2="360"/>
+  </g>
+
+  <!-- scattered security particles -->
+  <g fill="#38f0c8" opacity="0.5">
+    <circle cx="700" cy="70" r="3"/>
+    <circle cx="1120" cy="90" r="2.5"/>
+    <circle cx="80" cy="300" r="2.5"/>
+    <circle cx="640" cy="290" r="2"/>
+    <circle cx="1080" cy="270" r="3"/>
+    <circle cx="1000" cy="60" r="2"/>
+  </g>
+
+  <!-- glow behind lock -->
+  <circle cx="950" cy="190" r="170" fill="url(#glow)"/>
+
+  <!-- document with folded corner -->
+  <g>
+    <path d="M780,55 L920,55 L960,95 L960,300 L780,300 Z" fill="url(#doc)" stroke="#aebfd6" stroke-width="2"/>
+    <path d="M920,55 L920,95 L960,95 Z" fill="#aebfd6"/>
+    <rect x="800" y="120" width="130" height="10" rx="4" fill="#9aacc4"/>
+    <rect x="800" y="145" width="110" height="10" rx="4" fill="#9aacc4"/>
+    <rect x="800" y="170" width="130" height="10" rx="4" fill="#9aacc4"/>
+    <rect x="800" y="195" width="90" height="10" rx="4" fill="#9aacc4"/>
+    <rect x="795" y="235" width="140" height="30" rx="6" fill="url(#stripe)"/>
+    <text x="815" y="256" font-family="'Segoe UI', Arial, sans-serif" font-size="18" font-weight="700" fill="#ffffff">PDF</text>
+  </g>
+
+  <!-- unlocked padlock -->
+  <g transform="translate(940,150)">
+    <path d="M-40,-10 a40,40 0 0 1 80,0 v20 h-14 v-20 a26,26 0 0 0 -52,0 v10 h-14 z" fill="none" stroke="#38f0c8" stroke-width="10" stroke-linecap="round" opacity="0.9" transform="rotate(-18)"/>
+    <rect x="-45" y="10" width="90" height="70" rx="14" fill="url(#lockBody)"/>
+    <circle cx="0" cy="38" r="9" fill="#0b1220"/>
+    <path d="M-4,45 L4,45 L2,62 L-2,62 Z" fill="#0b1220"/>
+  </g>
+
+  <!-- headline -->
+  <text x="60" y="150" font-family="'Segoe UI', Arial, sans-serif" font-size="64" font-weight="700" fill="#f4f8fb"
+        textLength="700" lengthAdjust="spacingAndGlyphs">PDF Password Remover</text>
+
+  <!-- tagline -->
+  <text x="60" y="200" font-family="'Segoe UI', Arial, sans-serif" font-size="23" fill="#aebfd6"
+        textLength="720" lengthAdjust="spacingAndGlyphs">Remove passwords from encrypted PDF files quickly and</text>
+  <text x="60" y="232" font-family="'Segoe UI', Arial, sans-serif" font-size="23" fill="#aebfd6"
+        textLength="380" lengthAdjust="spacingAndGlyphs">securely in bulk.</text>
+
+  <!-- accent underline -->
+  <rect x="60" y="255" width="140" height="6" rx="3" fill="#38f0c8"/>
+</svg>
